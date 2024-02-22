@@ -1,0 +1,365 @@
+/* ESTILO GERAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body{
+   background-image: url(images/fundo.jpg);
+    height: 100vh;
+}
+
+.interface{
+    max-width: 12805%;
+    margin: 0 auto;
+} 
+
+.flex{
+    display: flex;
+}
+
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: rgba(80, 80, 189, 0.89);
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+h2.titulo{
+    color: aliceblue;
+    font-size: 27px;
+    text-align: center;
+}
+
+h2.titulo span{
+    color: rgba(80, 80, 189, 0.89);
+}
+
+button:hover{
+    box-shadow: 0px 0px 10px rgba(80, 80, 189, 0.89);
+    transform: scale(1.05);
+}
+
+/* ESTILO DO CABEÇALHO */
+
+header{
+    padding: 0px 4%; 
+}
+
+.topo-site h1{
+    color: aliceblue;
+    font-size: 32px;
+}
+
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+header a{
+    color: rgb(144, 144, 144);
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover{
+    color: aliceblue;
+    transform: scale(1.06);
+}
+
+
+header nav ul{
+    list-style-type: none;
+    position: relative;    
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px; content:" ";
+
+}
+
+/* ESTILO DO TOPO DO SITE */
+
+section.topo-site{
+    padding: 0px 4%;
+}
+
+section.topo-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-site .txt-topo-site p{
+    color: aliceblue;
+   margin: 22px;
+}
+
+/* APLICAND0 IMAGEM FLUTUANTE */
+
+.topo-site .img-topo-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+/* ESTILO DOS PROJETOS */
+
+section .projetos{
+    padding: 10000%;
+}
+
+section.projetos .flex{
+    gap: 60px;
+}
+
+
+.projetos .projetos-box{
+    color: aliceblue;
+    padding: 50px 7%;
+    border-radius: 20px;
+    margin-top: 20px;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.projetos .projetos-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 7px #ffffffad;
+}
+
+
+.projetos .projetos-box i{
+    font-size: 50px;
+    color: rgba(80, 80, 189, 0.89);
+}
+
+    .projetos .projetos-box h3{
+        font-size: 20px;
+        margin:  10px 2;
+    }
+
+.projetos .projetos-box a{
+    font-size: 23px;
+    color: #fff;
+    padding: 80px 0 0 500px;
+    display: flex center;
+    font-family: 'Quicksand', sans-serif;
+  
+}
+
+/* SOBRE MIM */
+
+section.sobre{
+    padding: 10px 1%;
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+
+}
+
+.sobre .txt-sobre{
+    color: #fff;
+}
+
+.sobre .txt-sobre h2{
+    font-size: 35; 
+    line-height: 40px;  
+    margin-bottom: 20px;
+}
+
+.sobre .txt-sobre h2 span{
+    color:rgba(80, 80, 189, 0.89);
+    /*display: block; quebrar a linha do h2*/
+}
+
+.sobre .txt-sobre p{
+    text-align: justify;
+}
+
+.btn-social button{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    border: 0;
+    background-color: rgb(107, 107, 231);
+    font-size: 18px;
+    cursor: pointer;
+    margin: 0 3px;
+    transition: .2s;
+}
+
+/*  FALE CONOSCO  */
+
+.contact{
+    padding: 40px 4%;
+}
+.contact .title::after{
+    background: none;
+    font-size: 30px;
+}
+.contact .contact-content .column{
+    width: calc(40% - 25px);
+}
+
+.contact .contact-content .interface{
+  display: flex;
+}
+.contact .contact-content{
+    align-items: flex-start;
+}
+
+.contact .contact-content .left p{
+    text-align: justify;
+}
+.contact .contact-content .text {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #fff;   
+}
+
+.contact .contact-content .text span{
+    color:rgba(80, 80, 189, 0.89);
+}
+
+.text-textoFaleConosco{
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+
+ .left .contact .contact-content.icons{
+    margin: 10px 0;
+}
+.contact .contact-content .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+
+.contact .contact-content .row .info{
+    margin-left: 30px
+}
+.contact .contact-content .row .info .head{
+    font-weight: 500;
+    color: #fff;
+}
+.contact .contact-content .row .info .sub-title{
+    color: #fff;
+}
+.contact .contact-content .row ion-icon{
+    font-size: 25px;
+    color: #fff;
+}
+.contact .rigth form .fields{
+    display: flex;
+}
+.contact .rigth form .field,
+.contact .rigth form .fields .field{
+    width: 100%;
+    height: 45px;
+    margin-bottom: 15px;
+}
+.contact .rigth form .field input,
+.contact .rigth form .textarea textarea{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Roboto',sans-serif;
+}
+.contact .rigth form .name{
+    margin-right: 10px;
+}
+.contact .rigth form .email{
+    margin-left: 10px;
+}
+.contact .rigth form .textarea{
+    width: 100%;
+    height: 80px;
+}
+.contact .rigth form .textarea textarea{
+    padding-top: 10px;
+    resize: none;
+}
+.contact .rigth form .button{
+    width: 170px;
+    height: 47px;
+}
+.contact .rigth form .button button{
+    width: 90%;
+    height: 90%;
+    border: 2px solidrgba(41, 41, 213, 0.89);
+    background:rgba(80, 80, 189, 0.89);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.contact .rigth form .button button:hover{
+    color:rgba(80, 80, 189, 0.89);
+    background: none;
+}
+
+/*RODAPÉ*/
+
+footer{
+    padding: 01px 1%;
+    box-shadow: 0 0 40px 10px #353699;
+}
+
+footer .flex{
+    justify-content: space-between ; /* separar os lados*/
+}
+
+footer .line-footer{
+    padding: 0.3px 0px;
+    
+}
+
+.borda{
+    border-top: 5px solid rgba(80, 80, 189, 0.89) ;
+}
+
+footer .line-footer p i{
+    color:rgba(80, 80, 189, 0.89);
+    font-size: 25px;
+}
+
+footer .line-footer a{
+    color: aliceblue;
+}
+
+footer .line-footer p{
+    font-size: 18px;
+    float: inline-end;
+}
